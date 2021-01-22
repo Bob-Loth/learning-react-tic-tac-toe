@@ -30,5 +30,5 @@ test('should return X as the winner if it has the top row', () => {
    const winner = calculateWinner(squares);
  
    // Assert
-   expect(winner).toBe(null); 
+   expect(winner).toBe(null);
  });
