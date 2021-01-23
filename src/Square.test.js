@@ -8,7 +8,7 @@ test('should render an empty Square', () => {
   const square = render(<Square value={null} />); // Line 1
   const button = square.getByRole('button'); // Line 2
   expect(button.innerHTML).toBe(''); // Line 3
-});  
+});
 
 test('should render with an X when the value prop is X', () => {
   const square = render(<Square value={'X'} />); // Line 1

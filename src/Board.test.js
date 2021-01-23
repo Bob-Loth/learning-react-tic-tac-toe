@@ -13,7 +13,7 @@ test('board re-rendered on each click, with xs and os appearing on alternating c
   fireEvent.click(buttons[0]);
   expect(buttons[4].innerHTML).toBe('X');
   expect(buttons[0].innerHTML).toBe('O');
-})
+}) 
 
 test('Next player status should alternate between X and O on clicks, starting with X',
 () => {
@@ -24,7 +24,7 @@ test('Next player status should alternate between X and O on clicks, starting wi
 
   const buttons = board.queryAllByRole('button');
   fireEvent.click(buttons[4]);
-
+  
   const status_msg_post_click = board.getByText('Next player', {exact: false});
   expect(status_msg_post_click.innerHTML).toBe('Next player: O');
 })

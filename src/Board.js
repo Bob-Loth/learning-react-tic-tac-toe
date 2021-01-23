@@ -10,7 +10,7 @@ export default function Board() {
   const [ winner, setWinner ] = useState(null);
   const [ xIsNext, setXIsNext ] = useState(true);
 
-  const status = 'Next player: X';
+  const status = `Next player: ${xIsNext ? 'X' : 'O'}`;
 
   const handleClick = (i) => {
     const squareCopy = squares.slice();
